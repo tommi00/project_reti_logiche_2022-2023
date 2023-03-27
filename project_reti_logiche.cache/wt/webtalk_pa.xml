@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Mon Mar 27 18:51:34 2023">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="f8c2ab76d50541d7b251b80888e9076b" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="4" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="NewProject" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="10680747_10656892.vhd, 101, 513" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 105, 521" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 106, 191" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 106, 398" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 106, 420" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 106, 536" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 106, 556" value="2" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 106, 556, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 109, 232" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 109, 30" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 109, 316, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 109, 317" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 111, 512" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 111, 515" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 112, 518" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 113, 12" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 113, 398" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 114, 281" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 114, 536" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 115, 510" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 116, 497" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 116, 533" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 116, 533, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 117, 408" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 117, 500" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 117, 533" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 119, 489" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 120, 517" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 121, 488" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 121, 503" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 125, 551" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 126, 501" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 126, 501, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 126, 534" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 127, 536" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 127, 536, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 129, 309" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 130, 458" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 131, 203" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 131, 474" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 133, 503" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 133, 505" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 135, 342" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 135, 468" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 135, 468, false, true, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 137, 481" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 139, 44" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 140, 115" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 140, 519" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 141, 486" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 141, 486, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 143, 503" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 144, 240" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 145, 29" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 145, 453" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 147, 489" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 149, 327" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 149, 380" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 150, 451" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 150, 451, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 150, 493" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 151, 383" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 153, 35" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 154, 499" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 156, 525" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 156, 525, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 157, 26" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 157, 48" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 157, 557" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 158, 542" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 158, 62" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 164, 509" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 164, 509, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 165, 391" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 168, 469" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 170, 297" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 176, 540" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 176, 556" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 176, 85" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 177, 432" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 177, 505" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 179, 516" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 180, 509" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 181, 487" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 182, 506" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 185, 94" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 19, 520" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 192, 435" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 193, 30" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 194, 388" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 197, 450" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 2, 314" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 200, 452" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 200, 452, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 202, 32" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 204, 37" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 210, 492" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 214, 101" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 219, 453" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 224, 223" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 224, 294" value="2" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 224, 294, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 225, 467" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 225, 467, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 226, 485" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 226, 485, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 227, 276" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 228, 246" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 228, 503" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 228, 503, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 23, 261" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 233, 284" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 234, 527" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 234, 527, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 235, 418" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 236, 518" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 236, 518, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 238, 168" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 238, 432" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 239, 432" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 248, 436" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 25, 59" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 253, 296" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 26, 25" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 26, 430" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 264, 46" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 265, 304" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 269, 472" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 27, 262" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 273, 483" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 275, 504" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 277, 501" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 279, 336" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 282, 520" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 29, 503" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 292, 433" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 293, 433" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 294, 469" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 294, 489" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 296, 496" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 30, 363" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 303, 433" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 303, 445" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 305, 458" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 311, 325" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 313, 476" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 318, 506" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 318, 506, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 32, 267" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 32, 392" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 32, 399" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 327, 553" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 328, 537" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 331, 331" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 336, 458" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 339, 332" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 345, 479" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 345, 479, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 346, 557" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 35, 507" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 352, 462" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 353, 520" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 353, 520, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 37, 506" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 375, 504" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 378, 390" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 378, 487" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 380, 517" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 382, 503" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 382, 95" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 386, 519" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 386, 521" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 39, 519" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 39, 521" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 390, 318" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 391, 514" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 392, 302" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 397, 433" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 4, 315" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 401, 442" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 408, 374" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 409, 440" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 41, 498" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 41, 498, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 428, 522" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 428, 522, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 433, 504" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 433, 504, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 440, 437" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 441, 483" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 444, 497" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 446, 452" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 45, 483" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 45, 483, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 465, 447" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 47, 453, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 47, 455" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 47, 468" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 47, 468, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 478, 503" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 48, 570" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 481, 505" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 487, 551" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 488, 505" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 50, 497" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 502, 505" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 508, 473" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 516, 506" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 517, 500" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 517, 510" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 521, 500" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 54, 247" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 54, 569" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 56, 331" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 56, 471" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 56, 501" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 567, 322" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 57, 248" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 57, 287" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 581, 382" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 582, 493" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 59, 491" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 612, 483" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 624, 463" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 68, 451" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 71, 296" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 73, 484" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 74, 416" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 75, 470" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 77, 297" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 78, 400" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 78, 520" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 8, 510" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 80, 330" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 81, 444" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 81, 504" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 82, 503" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 84, 299" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 84, 454" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 84, 493" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 84, 516" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 85, 348" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 85, 487" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 85, 510" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 86, 468" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 86, 479" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 87, 332" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 88, 508" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 88, 520" value="2" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 88, 520, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 89, 117" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 89, 298" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 89, 298, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 94, 515" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 95, 298" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 95, 300" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 95, 300, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 98, 436" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 98, 572" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 99, 278" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 99, 278, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="10680747_10656892.vhd, 99, 519" value="1" type="GuiResourceData"/>
+<property name="BACK,  Back" value="2" type="GuiResourceData"/>
+<property name="CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="4" type="GuiResourceData"/>
+<property name="NEXT, Next " value="21" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, Add or create design sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, clock" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, 10680747" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, 10680747_10656892" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, project_reti_logiche" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, VHDL, 3" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_ARCHITECTURE_NAME, project_reti_logiche_arch" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, project_reti_logiche" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="4" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="10" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, clock.xdc], 3, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, clock.xdc], 3, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, clock.xdc], 4, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2, false, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2, true, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 1, true" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 1, true, false, false, false, true, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, project_reti_logiche.vhd], 2, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files], 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files], 1, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, project_reti_logiche - project_reti_logiche_arch (10680747_10656892.vhd" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, false, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 5, false, false, false, false, true, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 6, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewProjectWizard_DO_NOT_SPECIFY_SOURCES_AT_THIS_TIME, Do not specify sources at this time, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_PARTS, xc7a200tfbg484-1 ; 484 ; 365 ; 740 ; 269200 ; 4 ; 4 ; 285 ; 134600 ; 10 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0, 3, xc7a200tfbg484-1, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_PARTS, xc7a200tfbg484-1 ; 484 ; 365 ; 740 ; 269200 ; 4 ; 4 ; 285 ; 134600 ; 10 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0, 3, xc7a200tfbg484-1, 0, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String" value="5" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CREATE_PROJECT_SUBDIRECTORY, Create project subdirectory, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CREATE_PROJECT_SUBDIRECTORY, Create project subdirectory, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, codicePersona1_codicePersona2.vhd" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, project_reti_logiche" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, Also delete the project local file/directory from disk, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, Also delete the project local file/directory from disk, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add" value="3" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, VHDLSourceFile_small ; 1 ; project_reti_logiche.vhd ; Local to Project ; xil_defaultlib ; Local to Project, 0, project_reti_logiche.vhd, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, VHDLSourceFile_small ; 1 ; project_reti_logiche.vhd ; Local to Project ; xil_defaultlib ; Local to Project, 0, project_reti_logiche.vhd, 2, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="11" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="5" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="2" type="GuiResourceData"/>
+<property name="clock.xdc, 154, 9" value="1" type="GuiResourceData"/>
+<property name="clock.xdc, 154, 9, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="clock.xdc, 158, 9" value="1" type="GuiResourceData"/>
+<property name="clock.xdc, 483, 15" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="6" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="5" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
