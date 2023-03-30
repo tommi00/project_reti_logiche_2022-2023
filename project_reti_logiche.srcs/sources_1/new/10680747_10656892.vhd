@@ -1,5 +1,33 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+entity inc is
+    port( inc_in    : in std_logic_vector(0 to 3);
+          inc_out   : out std_logic_vector(0 to 3)
+          --overflow : out std_logic
+        );
+end inc;
+
+architecture inc_arch of inc is
+begin
+
+ -- Componente puramente combinatorio. Segue la logica
+ -- del sommatore a full adder sequenziali
+  inc_out(4) <= not inc_in(4);
+  inc_out(3) <= inc_in(4) xor inc_in(3);
+  inc_out(2) <= (inc_in(4) and inc_in(3)) xor inc_in(2);
+  inc_out(1) <= (inc_in(4) and inc_in(3) and inc_in(2)) xor inc_in(1);
+  inc_out(0) <= (inc_in(4) and inc_in(3) and inc_in(2) and inc_in(1) ) xor inc_in(0);
+  --overflow <= inc_in(4) and inc_in(3) and inc_in(2) and inc_in(1) and inc_in(0);
+  
+    
+end inc_arch;
+
+
+
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -33,6 +61,8 @@ entity project_reti_logiche is
 end project_reti_logiche;
 
 
+
+
 --ARCHITETTURA
 architecture project_reti_logiche_arch of project_reti_logiche is
     
@@ -54,6 +84,7 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     signal mux2_data    : std_logic_vector(15 downto 0);    -- segnale uscita mux2
     signal mux3_data    : std_logic_vector(1 downto 0);     -- segnale uscita mux3
     
+    
     signal reg_mem_load : std_logic;
   --signal reg1_load    : std_logic;    -> è il clock
     signal reg2_load    : std_logic;
@@ -65,7 +96,7 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     --signal counter_rst  : std_logic;                      --dovrebbe essere start -> NON CI SERVE
     
     signal reg_mem_data : std_logic_vector(8 downto 0);     -- segnale uscita reg memoria
-    signal reg1_data    : std_logic_vector(17 downto 0);    -- segnale uscita reg1
+    signal reg1_data    : std_logic_vector(15 downto 0);    -- segnale uscita reg1    17,16,15
     signal reg2_data    : std_logic_vector(15 downto 0);    -- segnale uscita reg2
     signal reg3_data    : std_logic_vector(1 downto 0);     -- segnale uscita reg3
     
@@ -75,21 +106,73 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     signal regz3_data : std_logic_vector(8 downto 0);       -- segnale uscita reg z3
     
     --incrementatore
-    signal inc_in       : std_logic_vector(0 to 4);
-    signal inc_out      : std_logic_vector(0 to 4);
-
+    signal inc_in_port       : std_logic_vector(0 to 4);
+    signal inc_out_port      : std_logic_vector(0 to 4);
+    
+    --istanziamo componente dell'incrementatore
+    component inc is
+        port( inc_in    : in std_logic_vector(0 to 3);
+              inc_out   : out std_logic_vector(0 to 3)
+              --overflow : out std_logic
+            );
+        end component;
     
 begin
     
-   -- Componente puramente combinatorio. Segue la logica
-   -- del sommatore a full adder sequenziali
-    inc_out(4) <= not inc_in(4);
-    inc_out(3) <= inc_in(4) xor inc_in(3);
-    inc_out(2) <= (inc_in(4) and inc_in(3)) xor inc_in(2);
-    inc_out(1) <= (inc_in(4) and inc_in(3) and inc_in(2)) xor inc_in(1);
-    inc_out(0) <= (inc_in(4) and inc_in(3) and inc_in(2) and inc_in(1) ) xor inc_in(0);
-    --overflow <= inc_in(4) and inc_in(3) and inc_in(2) and inc_in(1) and inc_in(0);
+    --port map dei segnali dell'incrementatore  
+    incrementer : inc port map(
+        inc_in => inc_in_port,
+        inc_out => inc_out_port
+        --overflow => counter_ovf        
+    );
     
+    --lettura da w, inc_in è ciò che effettivamente "contiene" il valore del contatore.
+    process(inc_in_port, i_w, i_clk, i_start)                   -- Processo combinatorio
+        begin
+            if i_clk'event and i_clk = '1' then
+                if(i_start = '1' and i_rst = '0') then       
+                    case inc_in_port is
+                        when "00000" => reg3_data(1) <= i_w;       
+                        when "00001" => reg3_data(0) <= i_w;  --qui salviamo in reg3 il canale di uscita    
+                
+                
+                        when "00010" => reg1_data(15) <= i_w;     --salviamo in reg1 l'indirizzo di memoria non ancora paddato dalla cima, in ordine
+                        when "00011" => reg1_data(14) <= i_w;       
+                        when "00100" => reg1_data(13) <= i_w;       
+                        when "00101" => reg1_data(12) <= i_w;       
+                        when "00110" => reg1_data(11) <= i_w;       
+                        when "00111" => reg1_data(10) <= i_w;       
+                        when "01000" => reg1_data(9) <= i_w;       
+                        when "01001" => reg1_data(8) <= i_w;       
+                        when "01010" => reg1_data(7) <= i_w;       
+                        when "01011" => reg1_data(6) <= i_w;       
+                        when "01100" => reg1_data(5) <= i_w;       
+                        when "01101" => reg1_data(4) <= i_w;       
+                        when "01110" => reg1_data(3) <= i_w;       
+                        when "01111" => reg1_data(2) <= i_w;       
+                        when "10000" => reg1_data(1) <= i_w;       
+                        when "10001" => reg1_data(0) <= i_w;       
+
+                        when others => -- reg1_data <= "XXXXXXXXXXXXXXXX";            -- Non dimenticarsi il caso base, se non lo metto, lui intende che negli 
+                                                        -- altri casi io voglia mantenere il valore precedente e genera quindi un latch. alternativamente metterlo prima del case
+                    end case;
+                 end if;
+              end if;
+        end process;
+    
+    
+      --questo dovrebbe essere il processo in cui viene aggiornato il contatore 
+      process(i_clk, i_start)   --il nostro processo di questo registro è sensibile al segnale di reset e al clock                                 
+           begin                     -- Processo sequenziale perchè sto facendo esattamente una memoria, un registro
+               if i_rst = '1' then               --per prima cosa vado a verificare se c'è stato un reset
+                   inc_in_port <= "0000";
+               elsif i_clk'event and i_clk = '1' then      -- Non dimenticarsi il 'event, altrimenti vengono generati dei latch                                    
+                   if(i_start = '1' and i_rst = '0') then 
+                        inc_in_port <= inc_out_port;
+               end if;
+              end if;
+           end process;
+
     
    -- processo reg_mem: reset e salvataggio del registro reg_mem
     process(reg_mem_load, i_clk, i_rst)
@@ -207,7 +290,7 @@ begin
            end case;
     end process;
        
-    process(cur_state)
+    process(cur_state) --quando arriva il reset, riparte tutto e vengono resettati i segnali 
        begin
             mux2_load <= '1';
             mux3_load <= '1';
@@ -230,10 +313,12 @@ begin
             o_z2 <= "00000000";
             o_z3 <= "00000000";
             
-            inc_in <= "00000";
-            inc_out <= "00000";
+            inc_in_port <= "00000";
+            inc_out_port <= "00000";
             
             done_ok <= '0';
+            
+            reg1_data <= "0000000000000000";
             
             case cur_state is
                 when RESET =>
