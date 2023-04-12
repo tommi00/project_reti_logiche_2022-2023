@@ -2,20 +2,23 @@
 # Vivado v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Wed Apr 12 16:33:03 2023
-# Process ID: 9744
+# Start of session at: Thu Mar 30 15:44:19 2023
+# Process ID: 13692
 # Current directory: C:/Users/aless/Documents/GitHub/project_reti_logiche
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10964 C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3156 C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.xpr
 # Log file: C:/Users/aless/Documents/GitHub/project_reti_logiche/vivado.log
 # Journal file: C:/Users/aless/Documents/GitHub/project_reti_logiche\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/tommi/project_reti_logiche' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.ip_user_files'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.ip_user_files', nor could it be found using path 'C:/Users/tommi/project_reti_logiche/project_reti_logiche.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2016.1/data/ip'.
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 754.781 ; gain = 102.605
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 785.164 ; gain = 119.023
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 19:09:14 2023...

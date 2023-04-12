@@ -1,8 +1,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
 entity inc is
-    port( inc_in    : in std_logic_vector(0 to 3);
-          inc_out   : out std_logic_vector(0 to 3)
+    port( inc_in    : in std_logic_vector(0 to 4);
+          inc_out   : out std_logic_vector(0 to 4)
           --overflow : out std_logic
         );
 end inc;
@@ -28,7 +30,7 @@ end inc_arch;
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.NUMERIC_STD.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -79,15 +81,18 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     signal cur_state    : S;
     signal next_state   : S;
     
-    signal mux2_load    : std_logic;
-    signal mux3_load    : std_logic;
-    signal mux2_data    : std_logic_vector(15 downto 0);    -- segnale uscita mux2
-    signal mux3_data    : std_logic_vector(1 downto 0);     -- segnale uscita mux3
+    signal flag_shift   : std_logic;
+    
+    
+    --signal mux2_load    : std_logic;
+    --signal mux3_load    : std_logic;
+    --signal mux2_data    : std_logic_vector(15 downto 0);    -- segnale uscita mux2
+    --signal mux3_data    : std_logic_vector(1 downto 0);     -- segnale uscita mux3
     
     
     signal reg_mem_load : std_logic;
   --signal reg1_load    : std_logic;    -> è il clock
-    signal reg2_load    : std_logic;
+   --signal reg2_load    : std_logic;
     signal reg3_load    : std_logic;
     signal reg_out      : std_logic;
     
@@ -97,7 +102,7 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     
     signal reg_mem_data : std_logic_vector(8 downto 0);     -- segnale uscita reg memoria
     signal reg1_data    : std_logic_vector(15 downto 0);    -- segnale uscita reg1    17,16,15
-    signal reg2_data    : std_logic_vector(15 downto 0);    -- segnale uscita reg2
+    
     signal reg3_data    : std_logic_vector(1 downto 0);     -- segnale uscita reg3
     
     signal regz0_data : std_logic_vector(8 downto 0);       -- segnale uscita reg z0
@@ -108,6 +113,8 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     --incrementatore
     signal inc_in_port       : std_logic_vector(0 to 4);
     signal inc_out_port      : std_logic_vector(0 to 4);
+    
+    signal shift_counter     :std_logic_vector(0 to 4);   --qui salviamo la costante 1 per la sottrazione
     
     --istanziamo componente dell'incrementatore
     component inc is
@@ -126,6 +133,20 @@ begin
         --overflow => counter_ovf        
     );
     
+    
+    
+    --questo dovrebbe essere il processo in cui viene aggiornato il contatore 
+      process(i_clk, i_start)   --il nostro processo di questo registro è sensibile al segnale di reset e al clock                                 
+         begin                     -- Processo sequenziale perchè sto facendo esattamente una memoria, un registro
+             if i_rst = '1' then               --per prima cosa vado a verificare se c'è stato un reset
+                  inc_in_port <= "0000";
+               elsif i_clk'event and i_clk = '1' then      -- Non dimenticarsi il 'event, altrimenti vengono generati dei latch                                    
+                  if(i_start = '1' and i_rst = '0') then  -- lavora, e quindi incrementa, solo se start = 1
+                        inc_in_port <= inc_out_port;
+                  end if;
+                end if;
+            end process;
+
     --lettura da w, inc_in è ciò che effettivamente "contiene" il valore del contatore.
     process(inc_in_port, i_w, i_clk, i_start)                   -- Processo combinatorio
         begin
@@ -153,28 +174,34 @@ begin
                         when "10000" => reg1_data(1) <= i_w;       
                         when "10001" => reg1_data(0) <= i_w;       
 
-                        when others => -- reg1_data <= "XXXXXXXXXXXXXXXX";            -- Non dimenticarsi il caso base, se non lo metto, lui intende che negli 
+                        when others => null; -- reg1_data <= "XXXXXXXXXXXXXXXX";            -- Non dimenticarsi il caso base, se non lo metto, lui intende che negli 
                                                         -- altri casi io voglia mantenere il valore precedente e genera quindi un latch. alternativamente metterlo prima del case
                     end case;
                  end if;
               end if;
         end process;
-    
-    
-      --questo dovrebbe essere il processo in cui viene aggiornato il contatore 
-      process(i_clk, i_start)   --il nostro processo di questo registro è sensibile al segnale di reset e al clock                                 
-           begin                     -- Processo sequenziale perchè sto facendo esattamente una memoria, un registro
-               if i_rst = '1' then               --per prima cosa vado a verificare se c'è stato un reset
-                   inc_in_port <= "0000";
-               elsif i_clk'event and i_clk = '1' then      -- Non dimenticarsi il 'event, altrimenti vengono generati dei latch                                    
-                   if(i_start = '1' and i_rst = '0') then 
-                        inc_in_port <= inc_out_port;
-               end if;
+      
+      
+      
+       --questo è il processo con cui calciamo l'indirizzo di memoria con shift ecc.
+      process(i_clk, i_start, flag_shift)  
+        variable number_shift : std_logic_vector(0 to 4);
+        begin
+           if i_rst = '1' then               --per prima cosa vado a verificare se c'è stato un reset
+             number_shift := "00000";
+           elsif i_clk'event and i_clk = '1' then      -- Non dimenticarsi il 'event, altrimenti vengono generati dei latch                                    
+             if(i_start = '0' and i_rst = '0' and flag_shift = '1') then 
+                number_shift := STD_LOGIC_VECTOR (UNSIGNED(inc_in_port) - UNSIGNED (shift_counter)); --qui calcoliamo counter - 1
+                o_mem_addr <= std_logic_vector(shift_right(unsigned(reg1_data), to_integer(unsigned(number_shift)))); --qui shiftiamo e paddiamo
               end if;
-           end process;
-
+           end if;
     
-   -- processo reg_mem: reset e salvataggio del registro reg_mem
+      end process; 
+      
+      
+      
+    
+   -- processo reg_mem: reset e salvataggio del registro reg_mem, qui ci va il dato ricevuto dalla memoria 
     process(reg_mem_load, i_clk, i_rst)
     begin 
         if(i_rst = '1') then
@@ -186,41 +213,53 @@ begin
         end if;
     end process;
     
-   -- processo reg2: reset e salvataggio del registro reg2 
-    process(reg2_load, i_clk, i_rst)
-    begin 
-        if(i_rst = '1') then
-            reg2_data <= "0000000000000000";
-        elsif i_clk'event and i_clk = '1' then
-            if(reg2_load = '1') then
-              reg2_data <= mux2_data;
-            end if;
-        end if;
-    end process;
     
-   -- processo reg3: reset e salvataggio del registro reg3 
-    process(reg3_load, i_clk, i_rst)
-    begin 
-        if(i_rst = '1') then
-            reg3_data <= "00";              --l'uscita 00 rimane sempre aperta? forse non è un problema tanto reg_out salva solo quando vogliamo
-        elsif i_clk'event and i_clk = '1' then
-            if(reg3_load = '1') then
-                reg3_data <= mux3_data;
+    -- processo che salva nel registro di uscita corretto il valore proveniente dalla memoria 
+      process(reg_out, i_clk, i_rst)
+        begin
+           if(i_rst = '1') then
+             regz0_data <= "00000000";
+             regz1_data <= "00000000";
+             regz2_data <= "00000000";
+             regz3_data <= "00000000";
+           elsif i_clk'event and i_clk = '1' then
+                if(reg_out = '1') then      --regz0_data <= demux00_data;
+                   case reg3_data is
+                     when "00" => regz0_data <= reg_mem_data;
+                     when "01" => regz1_data <= reg_mem_data;  
+                     when "10" => regz2_data <= reg_mem_data;
+                     when "11" => regz3_data <= reg_mem_data;
+                     
+                     when others => null; --per non eseguire nessuna azione
+                   end case;             
             end if;
-        end if;
-    end process;
-    
-    -- processo regz0: salvataggio del registro regZ0
-        process(reg_out, i_clk)
-        begin 
-            if i_clk'event and i_clk = '1' then
-                if(reg_out = '1') then
-                    regz0_data <= demux00_data;
-                end if;
-            end if;
+           end if; 
         end process;
+        
+        
     
-    
+    --in questo processo mostriamo i valori sulle uscite vere (o_z1 ecc) quando done = 1. 
+    process(i_clk, i_rst, done_ok)
+    begin
+     if(i_rst = '1') then
+         o_z0 <= "00000000";
+         o_z1<=  "00000000";
+         o_z2 <= "00000000";
+         o_z3 <= "00000000";
+         elsif i_clk'event and i_clk = '1' then
+            if(done_ok = '1') then    
+               o_z0 <= regz0_data;
+               o_z1<=  regz1_data;
+               o_z2 <= regz2_data;
+               o_z3 <= regz3_data;
+            elsif(done_ok = '0') then
+              o_z0 <= "00000000";
+              o_z1<=  "00000000";
+              o_z2 <= "00000000";
+              o_z3 <= "00000000";
+            end if;
+          end if; 
+       end process;
     
     -- modifica stato e controllo del reset che può arrivare in ogni momento
     process(i_clk, i_rst)
@@ -292,6 +331,8 @@ begin
        
     process(cur_state) --quando arriva il reset, riparte tutto e vengono resettati i segnali 
        begin
+            flag_shift <= '0'; --inizializziamo a 0 questa flag che viene settata ad 1 nel passaggio da s1 -> s2
+            shift_counter <= "00001"; --costante "1" per la sottrazione 
             mux2_load <= '1';
             mux3_load <= '1';
             mux2_data <= "0000000000000000";
@@ -321,23 +362,25 @@ begin
             reg1_data <= "0000000000000000";
             
             case cur_state is
-                when RESET =>
-                when WAIT_START =>
-                when W_READ =>
+                when RESET =>           --SX
+                when WAIT_START =>      --S0
+                when W_READ =>          --S1
                     reg2_load <= '1';
                     reg3_load <= '1';
-                when ASK_MEM =>
+                when ASK_MEM =>         --S2
+                    flag_shift <= '1';  --mettiamo ad 1 la flag per lo shift
                     o_mem_en <= '1';
                     reg2_load <= '0';
                     reg3_load <= '0';
-                when READ_MEM =>
+                when READ_MEM =>            --S3
+                    flag_shift <= '0'; --riportiamo a 0 la flag per calcolare il valore dello shift
                     reg_mem_load <= '1';
-                when OUT_WRITE =>
+                when OUT_WRITE =>               --S4
                     o_mem_en <= '0';
                     reg_mem_load <= '0';
                     reg_out <= '1';
                     done_ok <= '1';
-                when OUT_DONE =>
+                when OUT_DONE =>                --S5
                     reg_out <= '0';
                     o_done <= '1';
                     done_ok <= '0';
