@@ -100,15 +100,15 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     
     --signal counter_rst  : std_logic;                      --dovrebbe essere start -> NON CI SERVE
     
-    signal reg_mem_data : std_logic_vector(8 downto 0);     -- segnale uscita reg memoria
+    signal reg_mem_data : std_logic_vector(7 downto 0);     -- segnale uscita reg memoria
     signal reg1_data    : std_logic_vector(15 downto 0);    -- segnale uscita reg1    17,16,15
     
     signal reg3_data    : std_logic_vector(1 downto 0);     -- segnale uscita reg3
     
-    signal regz0_data : std_logic_vector(8 downto 0);       -- segnale uscita reg z0
-    signal regz1_data : std_logic_vector(8 downto 0);       -- segnale uscita reg z1
-    signal regz2_data : std_logic_vector(8 downto 0);       -- segnale uscita reg z2
-    signal regz3_data : std_logic_vector(8 downto 0);       -- segnale uscita reg z3
+    signal regz0_data : std_logic_vector(7 downto 0);       -- segnale uscita reg z0
+    signal regz1_data : std_logic_vector(7 downto 0);       -- segnale uscita reg z1
+    signal regz2_data : std_logic_vector(7 downto 0);       -- segnale uscita reg z2
+    signal regz3_data : std_logic_vector(7 downto 0);       -- segnale uscita reg z3
     
     --incrementatore
     signal inc_in_port       : std_logic_vector(0 to 4);
@@ -118,8 +118,8 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     
     --istanziamo componente dell'incrementatore
     component inc is
-        port( inc_in    : in std_logic_vector(0 to 3);
-              inc_out   : out std_logic_vector(0 to 3)
+        port( inc_in    : in std_logic_vector(0 to 4);
+              inc_out   : out std_logic_vector(0 to 4)
               --overflow : out std_logic
             );
         end component;
@@ -139,7 +139,7 @@ begin
       process(i_clk, i_start)   --il nostro processo di questo registro è sensibile al segnale di reset e al clock                                 
          begin                     -- Processo sequenziale perchè sto facendo esattamente una memoria, un registro
              if i_rst = '1' then               --per prima cosa vado a verificare se c'è stato un reset
-                  inc_in_port <= "0000";
+                  inc_in_port <= "00000";
                elsif i_clk'event and i_clk = '1' then      -- Non dimenticarsi il 'event, altrimenti vengono generati dei latch                                    
                   if(i_start = '1' and i_rst = '0') then  -- lavora, e quindi incrementa, solo se start = 1
                         inc_in_port <= inc_out_port;

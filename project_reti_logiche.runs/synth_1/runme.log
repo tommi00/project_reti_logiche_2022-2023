@@ -1,0 +1,695 @@
+
+*** Running vivado
+    with args -log project_reti_logiche.vds -m64 -mode batch -messageDb vivado.pb -notrace -source project_reti_logiche.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source project_reti_logiche.tcl -notrace
+Command: synth_design -top project_reti_logiche -part xc7a200tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17396 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 273.379 ; gain = 66.637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:69]
+INFO: [Synth 8-3491] module 'inc' declared at 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:5' bound to instance 'incrementer' of component 'inc' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'inc' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'inc' (1#1) [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:12]
+WARNING: [Synth 8-614] signal 'i_rst' is read in the process but is not in the sensitivity list [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:139]
+WARNING: [Synth 8-614] signal 'i_rst' is read in the process but is not in the sensitivity list [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:187]
+INFO: [Synth 8-226] default block is never used [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:227]
+WARNING: [Synth 8-614] signal 'done_ok' is read in the process but is not in the sensitivity list [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:275]
+INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (2#1) [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:69]
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[15] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[11] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[10] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[9] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[8] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_we driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 309.855 ; gain = 103.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 309.855 ; gain = 103.113
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
+Finished Parsing XDC File [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 642.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'project_reti_logiche'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                              000 |                              000
+              wait_start |                              001 |                              001
+                  w_read |                              010 |                              010
+                 ask_mem |                              011 |                              011
+                read_mem |                              100 |                              100
+               out_write |                              101 |                              101
+                out_done |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'sequential' in module 'project_reti_logiche'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	  14 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module project_reti_logiche 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	  14 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 4     
+Module inc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z0[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z1[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z2[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_z3[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[15] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[11] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[10] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[9] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[8] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[4] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[2] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_addr[0] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_we driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 642.762 ; gain = 436.020
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[0] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[0]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[0] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_out[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[1] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[1]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[1] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_out[1] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[2] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[2]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[2] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_out[2] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[3] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[3]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[3] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_out[3] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[4] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[4]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_out[4] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_out[4] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]
+WARNING: [Synth 8-3332] Sequential element (inc_in_port_reg[0]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[0] with 1st driver pin 'inc_in_port_reg[0]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[0] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_in_port[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+WARNING: [Synth 8-3332] Sequential element (inc_in_port_reg[1]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[1] with 1st driver pin 'inc_in_port_reg[1]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[1] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_in_port[1] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+WARNING: [Synth 8-3332] Sequential element (inc_in_port_reg[2]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[2] with 1st driver pin 'inc_in_port_reg[2]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[2] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_in_port[2] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+WARNING: [Synth 8-3332] Sequential element (inc_in_port_reg[3]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[3] with 1st driver pin 'inc_in_port_reg[3]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[3] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_in_port[3] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+WARNING: [Synth 8-3332] Sequential element (inc_in_port_reg[4]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[4] with 1st driver pin 'inc_in_port_reg[4]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net inc_in_port[4] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net inc_in_port[4] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:131]
+WARNING: [Synth 8-3332] Sequential element (o_z0_reg[7]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[7] with 1st driver pin 'o_z0_reg[7]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[7] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z0[7] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+WARNING: [Synth 8-3332] Sequential element (o_z0_reg[6]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[6] with 1st driver pin 'o_z0_reg[6]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[6] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z0[6] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+WARNING: [Synth 8-3332] Sequential element (o_z0_reg[5]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[5] with 1st driver pin 'o_z0_reg[5]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[5] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z0[5] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+WARNING: [Synth 8-3332] Sequential element (o_z0_reg[4]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[4] with 1st driver pin 'o_z0_reg[4]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[4] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z0[4] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+WARNING: [Synth 8-3332] Sequential element (o_z0_reg[3]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[3] with 1st driver pin 'o_z0_reg[3]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[3] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z0[3] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+WARNING: [Synth 8-3332] Sequential element (o_z0_reg[2]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[2] with 1st driver pin 'o_z0_reg[2]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[2] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z0[2] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+WARNING: [Synth 8-3332] Sequential element (o_z0_reg[1]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[1] with 1st driver pin 'o_z0_reg[1]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[1] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z0[1] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+WARNING: [Synth 8-3332] Sequential element (o_z0_reg[0]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[0] with 1st driver pin 'o_z0_reg[0]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z0[0] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z0[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:245]
+WARNING: [Synth 8-3332] Sequential element (o_z1_reg[7]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[7] with 1st driver pin 'o_z1_reg[7]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[7] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z1[7] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+WARNING: [Synth 8-3332] Sequential element (o_z1_reg[6]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[6] with 1st driver pin 'o_z1_reg[6]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[6] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z1[6] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+WARNING: [Synth 8-3332] Sequential element (o_z1_reg[5]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[5] with 1st driver pin 'o_z1_reg[5]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[5] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z1[5] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+WARNING: [Synth 8-3332] Sequential element (o_z1_reg[4]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[4] with 1st driver pin 'o_z1_reg[4]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[4] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z1[4] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+WARNING: [Synth 8-3332] Sequential element (o_z1_reg[3]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[3] with 1st driver pin 'o_z1_reg[3]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[3] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z1[3] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+WARNING: [Synth 8-3332] Sequential element (o_z1_reg[2]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[2] with 1st driver pin 'o_z1_reg[2]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[2] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z1[2] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+WARNING: [Synth 8-3332] Sequential element (o_z1_reg[1]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[1] with 1st driver pin 'o_z1_reg[1]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[1] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z1[1] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+WARNING: [Synth 8-3332] Sequential element (o_z1_reg[0]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[0] with 1st driver pin 'o_z1_reg[0]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z1[0] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z1[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:246]
+WARNING: [Synth 8-3332] Sequential element (o_z2_reg[7]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[7] with 1st driver pin 'o_z2_reg[7]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[7] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z2[7] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+WARNING: [Synth 8-3332] Sequential element (o_z2_reg[6]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[6] with 1st driver pin 'o_z2_reg[6]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[6] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z2[6] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+WARNING: [Synth 8-3332] Sequential element (o_z2_reg[5]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[5] with 1st driver pin 'o_z2_reg[5]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[5] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z2[5] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+WARNING: [Synth 8-3332] Sequential element (o_z2_reg[4]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[4] with 1st driver pin 'o_z2_reg[4]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[4] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z2[4] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+WARNING: [Synth 8-3332] Sequential element (o_z2_reg[3]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[3] with 1st driver pin 'o_z2_reg[3]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[3] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z2[3] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+WARNING: [Synth 8-3332] Sequential element (o_z2_reg[2]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[2] with 1st driver pin 'o_z2_reg[2]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[2] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z2[2] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+WARNING: [Synth 8-3332] Sequential element (o_z2_reg[1]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[1] with 1st driver pin 'o_z2_reg[1]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[1] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z2[1] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+WARNING: [Synth 8-3332] Sequential element (o_z2_reg[0]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[0] with 1st driver pin 'o_z2_reg[0]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z2[0] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z2[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:247]
+WARNING: [Synth 8-3332] Sequential element (o_z3_reg[7]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[7] with 1st driver pin 'o_z3_reg[7]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[7] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z3[7] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+WARNING: [Synth 8-3332] Sequential element (o_z3_reg[6]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[6] with 1st driver pin 'o_z3_reg[6]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[6] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z3[6] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+WARNING: [Synth 8-3332] Sequential element (o_z3_reg[5]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[5] with 1st driver pin 'o_z3_reg[5]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[5] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z3[5] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+WARNING: [Synth 8-3332] Sequential element (o_z3_reg[4]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[4] with 1st driver pin 'o_z3_reg[4]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[4] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z3[4] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+WARNING: [Synth 8-3332] Sequential element (o_z3_reg[3]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[3] with 1st driver pin 'o_z3_reg[3]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[3] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z3[3] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+WARNING: [Synth 8-3332] Sequential element (o_z3_reg[2]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[2] with 1st driver pin 'o_z3_reg[2]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[2] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z3[2] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+WARNING: [Synth 8-3332] Sequential element (o_z3_reg[1]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[1] with 1st driver pin 'o_z3_reg[1]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[1] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z3[1] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+WARNING: [Synth 8-3332] Sequential element (o_z3_reg[0]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[0] with 1st driver pin 'o_z3_reg[0]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_z3[0] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_z3[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:248]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[15]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[15] with 1st driver pin 'reg1_data_reg[15]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[15] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[15] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[14]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[14] with 1st driver pin 'reg1_data_reg[14]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[14] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[14] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[13]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[13] with 1st driver pin 'reg1_data_reg[13]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[13] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[13] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[12]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[12] with 1st driver pin 'reg1_data_reg[12]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[12] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[12] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[11]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[11] with 1st driver pin 'reg1_data_reg[11]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[11] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[11] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[10]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[10] with 1st driver pin 'reg1_data_reg[10]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[10] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[10] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[9]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[9] with 1st driver pin 'reg1_data_reg[9]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[9] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[9] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[8]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[8] with 1st driver pin 'reg1_data_reg[8]/Q' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net reg1_data_reg[8] with 2nd driver pin 'GND' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[8] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[7]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[7] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[6]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[6] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[5]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[5] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[4]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[4] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[3]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[3] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[2]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[2] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[1]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[1] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (reg1_data_reg[0]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net reg1_data_reg[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[15]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[15] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[14]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[14] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[13]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[13] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[12]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[12] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[11]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[11] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[10]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[10] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[9]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[9] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[8]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[8] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[7]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[7] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[6]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[6] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[5]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[5] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[4]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[4] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[3]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[3] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[2]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[2] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[1]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[1] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (o_mem_addr_reg[0]) is unused and will be removed from module project_reti_logiche.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_mem_addr[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:195]
+WARNING: [Synth 8-3332] Sequential element (reg3_data_reg[1]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg3_data_reg[0]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg_mem_data_reg[7]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg_mem_data_reg[6]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg_mem_data_reg[5]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg_mem_data_reg[4]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg_mem_data_reg[3]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg_mem_data_reg[2]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg_mem_data_reg[1]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (reg_mem_data_reg[0]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz0_data_reg[7]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz0_data_reg[6]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz0_data_reg[5]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz0_data_reg[4]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz0_data_reg[3]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz0_data_reg[2]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz0_data_reg[1]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz0_data_reg[0]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz1_data_reg[7]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz1_data_reg[6]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz1_data_reg[5]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz1_data_reg[4]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz1_data_reg[3]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz1_data_reg[2]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz1_data_reg[1]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz1_data_reg[0]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz2_data_reg[7]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz2_data_reg[6]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz2_data_reg[5]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz2_data_reg[4]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (regz2_data_reg[3]) is unused and will be removed from module project_reti_logiche.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 642.762 ; gain = 436.020
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 642.762 ; gain = 436.020
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT3 |     2|
+|3     |LUT4 |     2|
+|4     |LUT5 |     2|
+|5     |FDCE |     3|
+|6     |IBUF |     3|
+|7     |OBUF |    51|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    64|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 642.762 ; gain = 436.020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 222 critical warnings and 160 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 642.762 ; gain = 103.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 642.762 ; gain = 436.020
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 201 Warnings, 174 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 642.762 ; gain = 436.020
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 642.762 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 12 18:49:06 2023...

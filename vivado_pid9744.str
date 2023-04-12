@@ -1171,3 +1171,142 @@ selectCodeEditor("10680747_10656892.vhd", 139, 329); // bH:N (JPanel:JComponent,
 // TclEventType: DG_UPDATE_GRAPH
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Wed Apr 12 18:44:38 2023] Launched synth_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log [Wed Apr 12 18:44:38 2023] Launched impl_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// Elapsed time: 16 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Wed Apr 12 18:44:44 CEST 2023 ; 00:00:09 ; Vivado Synthesis Defaults (Vivado Synthesis 2016) ; xc7a200tfbg484-1 ; Vivado Synthesis Defaults", 0, "synth_design ERROR", 2, true); // W:as (JViewport:JComponent, cv:JFrame) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 1s
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'inc_in': port width = 5, actual width = 4 [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:130]. ]", 1, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'inc_in': port width = 5, actual width = 4 [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:130]. ]", 1, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'inc_in': port width = 5, actual width = 4 [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:130]. ]", 1, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'inc_in': port width = 5, actual width = 4 [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:130]. , [Synth 8-549] port width mismatch for port 'inc_out': port width = 5, actual width = 4 [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:122]. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'inc_in': port width = 5, actual width = 4 [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:130]. , [Synth 8-549] port width mismatch for port 'inc_out': port width = 5, actual width = 4 [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:122]. ]", 2, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("10680747_10656892.vhd", 369, 65); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 17 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 5 bits, source has 4 bits [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:142]. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 5 bits, source has 4 bits [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:142]. ]", 3, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 5 bits, source has 4 bits [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:142]. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.srcs\sources_1\new\10680747_10656892.vhd;-;;-;16;-;line;-;142;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 235, 177); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 263, 180); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-285] failed synthesizing module 'project_reti_logiche' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:69]. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.srcs\sources_1\new\10680747_10656892.vhd;-;;-;16;-;line;-;69;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("10680747_10656892.vhd", 10, 105); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Wed Apr 12 18:46:37 2023] Launched synth_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log [Wed Apr 12 18:46:37 2023] Launched impl_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 23 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 9 bits, source has 8 bits [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:208]. ]", 1, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.srcs\sources_1\new\10680747_10656892.vhd;-;;-;16;-;line;-;208;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 206, 177); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("10680747_10656892.vhd", 306, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 303, 222); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Wed Apr 12 18:47:38 2023] Launched synth_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log [Wed Apr 12 18:47:38 2023] Launched impl_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 9 bits, source has 8 bits [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:221]. ]", 1, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.srcs\sources_1\new\10680747_10656892.vhd;-;;-;16;-;line;-;221;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("10680747_10656892.vhd", 289, 160); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Wed Apr 12 18:48:17 2023] Launched synth_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log [Wed Apr 12 18:48:17 2023] Launched impl_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 64 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net inc_out[0] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[0]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]. ]", 1, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.srcs\sources_1\new\10680747_10656892.vhd;-;;-;16;-;line;-;17;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 69 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net inc_out[0] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[0]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]. ]", 1, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.srcs\sources_1\new\10680747_10656892.vhd;-;;-;16;-;line;-;17;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net inc_out[0] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[0]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]. ]", 1, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5559] multi-driven net inc_out[0] is connected to constant driver, other driver is ignored [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]. ]", 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.srcs\sources_1\new\10680747_10656892.vhd;-;;-;16;-;line;-;17;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 44, 192); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 278, 230); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net inc_out[0] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[0]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]. ]", 1); // al:k (JViewport:JComponent, cv:JFrame)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net inc_out[0] with 1st driver pin 'incrementer/p_5_out_inferred/inc_out[0]' [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:17]. ]", 1); // al:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Implementation Completed: addNotify
