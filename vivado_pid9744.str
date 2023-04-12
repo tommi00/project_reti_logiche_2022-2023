@@ -1134,3 +1134,40 @@ selectCodeEditor("10680747_10656892.vhd", 128, 203); // bH:N (JPanel:JComponent,
 selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
 // Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
 // 'c' command handler elapsed time: 10 seconds
+// Elapsed time: 52 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 12 18:43:23 2023] Launched synth_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log [Wed Apr 12 18:43:24 2023] Launched impl_1... Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 805.688 ; gain = 0.000 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// Elapsed time: 19 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cv:JFrame)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 87, 215); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 84, 234); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 80, 244); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 84, 258); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 84, 319); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 141, 299); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("10680747_10656892.vhd", 139, 329); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

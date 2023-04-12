@@ -333,13 +333,13 @@ begin
        begin
             flag_shift <= '0'; --inizializziamo a 0 questa flag che viene settata ad 1 nel passaggio da s1 -> s2
             shift_counter <= "00001"; --costante "1" per la sottrazione 
-            mux2_load <= '1';
-            mux3_load <= '1';
-            mux2_data <= "0000000000000000";
-            mux3_data <= "00";
+            --mux2_load <= '1';
+            --mux3_load <= '1';
+           -- mux2_data <= "0000000000000000";
+            --mux3_data <= "00";
             reg_mem_load <= '0';
             
-            reg2_load <= '0';
+            --reg2_load <= '0';
             reg3_load <= '0';
             reg_out <= '0';
             
@@ -365,12 +365,12 @@ begin
                 when RESET =>           --SX
                 when WAIT_START =>      --S0
                 when W_READ =>          --S1
-                    reg2_load <= '1';
+                    --reg2_load <= '1';
                     reg3_load <= '1';
                 when ASK_MEM =>         --S2
                     flag_shift <= '1';  --mettiamo ad 1 la flag per lo shift
                     o_mem_en <= '1';
-                    reg2_load <= '0';
+                    --reg2_load <= '0';
                     reg3_load <= '0';
                 when READ_MEM =>            --S3
                     flag_shift <= '0'; --riportiamo a 0 la flag per calcolare il valore dello shift
