@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-| Date         : Wed Apr 12 18:49:57 2023
-| Host         : Alessandro-PC running 64-bit major release  (build 9200)
+| Date         : Tue Apr 25 09:56:56 2023
+| Host         : Tommi-PC running 64-bit major release  (build 9200)
 | Command      : report_io -file project_reti_logiche_io_placed.rpt
 | Design       : project_reti_logiche
 | Device       : xc7a200t

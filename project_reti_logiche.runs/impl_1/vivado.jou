@@ -2,11 +2,11 @@
 # Vivado v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Wed Apr 12 18:49:14 2023
-# Process ID: 1828
-# Current directory: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1
+# Start of session at: Tue Apr 25 09:55:56 2023
+# Process ID: 12240
+# Current directory: C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1
 # Command line: vivado.exe -log project_reti_logiche.vdi -applog -messageDb vivado.pb -mode batch -source project_reti_logiche.tcl -notrace
-# Log file: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1/project_reti_logiche.vdi
-# Journal file: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1\vivado.jou
+# Log file: C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1/project_reti_logiche.vdi
+# Journal file: C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source project_reti_logiche.tcl -notrace

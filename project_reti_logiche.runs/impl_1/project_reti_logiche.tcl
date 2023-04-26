@@ -50,12 +50,12 @@ set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.cache/wt [current_project]
-  set_property parent.project_path C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.xpr [current_project]
-  set_property ip_repo_paths c:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.cache/ip [current_project]
-  set_property ip_output_repo c:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.cache/ip [current_project]
-  add_files -quiet C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.dcp
-  read_xdc C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc
+  set_property webtalk.parent_dir C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.cache/wt [current_project]
+  set_property parent.project_path C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.xpr [current_project]
+  set_property ip_repo_paths c:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.cache/ip [current_project]
+  set_property ip_output_repo c:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.cache/ip [current_project]
+  add_files -quiet C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.dcp
+  read_xdc C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc
   link_design -top project_reti_logiche -part xc7a200tfbg484-1
   write_hwdef -file project_reti_logiche.hwdef
   close_msg_db -file init_design.pb
