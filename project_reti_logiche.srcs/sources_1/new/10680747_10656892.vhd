@@ -46,10 +46,7 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     signal next_state   : S;
     
     signal flag_shift   : std_logic;
-    
-    signal test     : std_logic := '0';
-
-    
+        
     signal reg_mem_load : std_logic;
     signal reg3_load    : std_logic;
     signal reg_out      : std_logic;
@@ -69,18 +66,18 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     signal shift_counter  : STD_LOGIC_VECTOR(4 downto 0)     := "00001";   --qui salviamo la costante 1 per la sottrazione
     signal count          : STD_LOGIC_VECTOR(4 downto 0)     := "00000";
     
-    signal NUM1 :  STD_LOGIC_VECTOR (4 downto 0) := "01000";
-    signal NUM2 :  STD_LOGIC_VECTOR (4 downto 0) := "00001";
+    --signal NUM1 :  STD_LOGIC_VECTOR (4 downto 0) := "01000";
+    --signal NUM2 :  STD_LOGIC_VECTOR (4 downto 0) := "00001";
     
 begin    
     --nuovo processo per contare
-      process(i_rst, i_clk, i_start, done_ok)
-            begin
+    process(i_rst, i_clk, i_start, done_ok)
+        begin
                 if (i_rst = '1' or done_ok = '1') then 
                     count <= "00000";
                 elsif (i_clk'event and i_clk = '1' and i_start = '1') then 
                     --count <= STD_LOGIC_VECTOR (UNSIGNED(count) + UNSIGNED (shift_counter) );
-                    NUM1 <= NUM1 + NUM2;
+                    --NUM1 <= NUM1 + NUM2;
                     count <= count + shift_counter;
                 end if;
       end process;
@@ -380,7 +377,7 @@ begin
                             --o_z2 <= "00000000";
                             --o_z3 <= "00000000";
                             --count <= "00000";
-                            done_ok <= '0';
+                            --done_ok <= '0';             --POSSIBILE LATCH
                             
                 when WAIT_START =>      --S0
                 when W_READ =>          --S1

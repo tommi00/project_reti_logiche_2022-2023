@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/project_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module project_reti_logiche
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tommi/Documents/GitHub/project_reti_logiche/tbset_new/tb_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tommi/Documents/GitHub/project_reti_logiche/tbset_new/tb_example23.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+WARNING: [VRFC 10-1194] overwriting existing secondary unit projecttb [C:/Users/tommi/Documents/GitHub/project_reti_logiche/tbset_new/tb_example23.vhd:13]

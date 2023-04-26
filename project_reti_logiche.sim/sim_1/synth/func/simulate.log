@@ -1,0 +1,5 @@
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
+Time: 4200100 ps  Iteration: 0  Process: /project_tb/testRoutine  File: C:/Users/tommi/Documents/GitHub/project_reti_logiche/tbset_new/tb_example23.vhd
+$finish called at time : 4200100 ps : File "C:/Users/tommi/Documents/GitHub/project_reti_logiche/tbset_new/tb_example23.vhd" Line 153
