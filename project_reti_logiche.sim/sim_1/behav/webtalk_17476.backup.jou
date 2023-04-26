@@ -2,12 +2,11 @@
 # Webtalk v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Wed Apr 26 17:14:33 2023
-# Process ID: 12968
+# Start of session at: Wed Apr 26 17:13:59 2023
+# Process ID: 17476
 # Current directory: C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/webtalk.log
 # Journal file: C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Apr 26 17:14:34 2023...

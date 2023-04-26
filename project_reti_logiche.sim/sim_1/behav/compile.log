@@ -1,4 +1,4 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity project_reti_logiche
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tommi/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tommi/Documents/GitHub/project_reti_logiche/tbset_new/tb_7.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity project_tb
