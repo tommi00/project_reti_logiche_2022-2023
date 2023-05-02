@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1682524436">
-  <File Type="RDS-PROPCONSTRS" Name="project_reti_logiche_drc_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1682775135">
   <File Type="PA-TCL" Name="project_reti_logiche.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="project_reti_logiche_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="project_reti_logiche.vds"/>
   <File Type="RDS-UTIL" Name="project_reti_logiche_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="project_reti_logiche_utilization_synth.pb"/>

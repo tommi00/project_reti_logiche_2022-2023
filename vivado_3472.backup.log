@@ -1,0 +1,240 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Sat Apr 29 15:23:43 2023
+# Process ID: 3472
+# Current directory: C:/Users/aless/Documents/GitHub/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13340 C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Users/aless/Documents/GitHub/project_reti_logiche/vivado.log
+# Journal file: C:/Users/aless/Documents/GitHub/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------start_gui
+open_project C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/tommi/Documents/GitHub/project_reti_logiche' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 813.566 ; gain = 142.195
+uupdate_compile_order -fileset sources_1set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd
+WARNING: [filemgmt 56-12] File 'C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd' cannot be added to the project because it already exists in the project, skipping this file
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+WARNING: [VRFC 10-1194] overwriting existing secondary unit projecttb [C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd:12]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 36c13ea0dc784a2f9f7cf972b4bad010 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package std.textio
+Compiling architecture project_reti_logiche_arch of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 29 15:26:34 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 820.664 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 835.582 ; gain = 14.918
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
+Time: 58400 ns  Iteration: 0  Process: /project_tb/testRoutine  File: C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd
+$finish called at time : 58400 ns : File "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" Line 542
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
+Time: 58400 ns  Iteration: 0  Process: /project_tb/testRoutine  File: C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd
+$finish called at time : 58400 ns : File "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" Line 542
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
+Time: 58400 ns  Iteration: 0  Process: /project_tb/testRoutine  File: C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd
+$finish called at time : 58400 ns : File "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" Line 542
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
+Time: 58400 ns  Iteration: 0  Process: /project_tb/testRoutine  File: C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd
+$finish called at time : 58400 ns : File "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" Line 542
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd" into library xil_defaultlib [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/10680747_10656892.vhd:1]
+[Sat Apr 29 15:32:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-1
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
+Finished Parsing XDC File [C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1308.914 ; gain = 335.891
+launch_simulation -mode post-synthesis -type functional
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-29] Writing simulation netlist file for design 'synth_1'...
+INFO: [USF-XSim-90] write_verilog -mode funcsim -nolib -force -file "C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/project_tb_func_synth.v"
+INFO: [USF-XSim-34] Netlist generated:C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/project_tb_func_synth.v
+INFO: [USF-XSim-37] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func'
+"xvlog -m64 --relax -prj project_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/project_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module project_reti_logiche
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+WARNING: [VRFC 10-1194] overwriting existing secondary unit projecttb [C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd:12]
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1699.383 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 36c13ea0dc784a2f9f7cf972b4bad010 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot project_tb_func_synth xil_defaultlib.project_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package std.textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.ffsrce_fdce
+Compiling module unisims_ver.FDCE
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.sffsrce_fdre
+Compiling module unisims_ver.FDRE
+Compiling module xil_defaultlib.project_reti_logiche
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_func_synth
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim.dir/project_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 29 15:35:42 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1699.383 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_func_synth -key {Post-Synthesis:sim_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1718.070 ; gain = 18.688
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
+Time: 58400100 ps  Iteration: 0  Process: /project_tb/testRoutine  File: C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd
+$finish called at time : 58400100 ps : File "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" Line 542
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1792.723 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 29 15:37:47 2023...

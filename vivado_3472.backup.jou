@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Sat Apr 29 15:23:43 2023
+# Process ID: 3472
+# Current directory: C:/Users/aless/Documents/GitHub/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13340 C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Users/aless/Documents/GitHub/project_reti_logiche/vivado.log
+# Journal file: C:/Users/aless/Documents/GitHub/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------start_gui
+open_project C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.xpr
+uupdate_compile_order -fileset sources_1set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd
+launch_simulation
+source project_tb.tcl
+restart
+run all
+restart
+run all
+restart
+run all
+restart
+run all
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_simulation -mode post-synthesis -type functional
+source project_tb.tcl
+restart
+run all
+close_sim
+close_sim

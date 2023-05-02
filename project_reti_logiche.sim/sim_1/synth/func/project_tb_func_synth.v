@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-// Date        : Wed Apr 26 18:10:49 2023
-// Host        : Tommi-PC running 64-bit major release  (build 9200)
+// Date        : Sat Apr 29 15:35:24 2023
+// Host        : Alessandro-PC running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
-//               C:/Users/tommi/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/project_tb_func_synth.v
+//               C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/project_tb_func_synth.v
 // Design      : project_reti_logiche
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

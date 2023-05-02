@@ -3,7 +3,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
---ENTITY
 entity project_reti_logiche is
     port(
         i_clk : in std_logic;
@@ -31,43 +30,43 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     -- Sx       RESET
     -- S0       WAIT_START
     -- S1       W_READ
-    -- S NUOVO  CREATE_ADDRESS
-    -- S2       ASK_MEM
-    -- S3       READ_MEM
-    --          REG_MEM_WRITE       --> scriviamo sul registro reg mem
-    --          REG_OUT_WRITE       --> in base all'uscita scelta, scrivo nel suo registro
-    -- S4       OUT_WRITE           --> mando in uscita 
-    --          OUT_SEND
-    -- S5       OUT_DONE
+    -- S2       CREATE_ADDRESS
+    -- S3       ASK_MEM
+    -- S4       READ_MEM
+    -- S5       REG_MEM_WRITE       --> scriviamo sul registro reg mem
+    -- S6       REG_OUT_WRITE       --> in base all'uscita scelta, scrivo nel suo registro
+    -- S7       OUT_WRITE           --> mando in uscita 
+    -- S8       OUT_SEND
+    -- S9       OUT_DONE
+    -- S10      OUT_OK
     
     type S is (RESET, WAIT_START, W_READ, CREATE_ADDRESS, ASK_MEM, READ_MEM, REG_MEM_WRITE, REG_OUT_WRITE, OUT_WRITE, OUT_SEND, OUT_DONE, OUT_OK);
-
+    
+    --signal reg3_load    : std_logic;  in realtà è start che abilita la scrittura nei registri: questo segnale non serve
+    
     signal cur_state    : S;
     signal next_state   : S;
     
-    signal flag_shift   : std_logic;
-        
+    signal flag_shift   : std_logic;    
     signal reg_mem_load : std_logic;
-    signal reg3_load    : std_logic;
+
     signal reg_out      : std_logic;
     
     signal done_ok      : std_logic;
         
-    signal reg_mem_data : std_logic_vector(7 downto 0);     -- segnale uscita reg memoria
+    signal reg_mem_data : std_logic_vector(7 downto 0);    
     
-    signal reg1_data    : std_logic_vector(15 downto 0) := "0000000000000000";    -- segnale uscita reg1    17...2 di W
-    signal reg3_data    : STD_LOGIC_VECTOR(1 downto 0) := "00";     -- segnale uscita reg3
+    signal reg1_data    : std_logic_vector(15 downto 0) := "0000000000000000";    
+    signal reg3_data    : STD_LOGIC_VECTOR(1 downto 0) := "00";    
     
-    signal regz0_data : std_logic_vector(7 downto 0);       -- segnale uscita reg z0
-    signal regz1_data : std_logic_vector(7 downto 0);       -- segnale uscita reg z1
-    signal regz2_data : std_logic_vector(7 downto 0);       -- segnale uscita reg z2
-    signal regz3_data : std_logic_vector(7 downto 0);       -- segnale uscita reg z3
+    signal regz0_data : std_logic_vector(7 downto 0);     
+    signal regz1_data : std_logic_vector(7 downto 0);       
+    signal regz2_data : std_logic_vector(7 downto 0);       
+    signal regz3_data : std_logic_vector(7 downto 0);       
     
-    signal shift_counter  : STD_LOGIC_VECTOR(4 downto 0)     := "00001";   --qui salviamo la costante 1 per la sottrazione
+    signal shift_counter  : STD_LOGIC_VECTOR(4 downto 0)     := "00001";   
     signal count          : STD_LOGIC_VECTOR(4 downto 0)     := "00000";
     
-    --signal NUM1 :  STD_LOGIC_VECTOR (4 downto 0) := "01000";
-    --signal NUM2 :  STD_LOGIC_VECTOR (4 downto 0) := "00001";
     
 begin    
     --nuovo processo per contare
@@ -75,35 +74,18 @@ begin
         begin
                 if (i_rst = '1' or done_ok = '1') then 
                     count <= "00000";
-                elsif (i_clk'event and i_clk = '1' and i_start = '1') then 
-                    --count <= STD_LOGIC_VECTOR (UNSIGNED(count) + UNSIGNED (shift_counter) );
-                    --NUM1 <= NUM1 + NUM2;
+                elsif (i_clk'event and i_clk = '1' and i_start = '1') then                                         
                     count <= count + shift_counter;
                 end if;
-      end process;
-      
-      
---    --questo dovrebbe essere il processo in cui viene aggiornato il contatore 
---      process(i_clk, i_start)   --il nostro processo di questo registro è sensibile al segnale di reset e al clock                                 
---         begin                     -- Processo sequenziale perchè sto facendo esattamente una memoria, un registro
---             if (i_rst = '1') then               --per prima cosa vado a verificare se c'è stato un reset
---                  inc_in_port <= "00000";
---               elsif (i_clk'event and i_clk = '1') then      -- Non dimenticarsi il 'event, altrimenti vengono generati dei latch                                    
---                  if(i_start = '1' and i_rst = '0') then  -- lavora, e quindi incrementa, solo se start = 1
---                        inc_in_port <= inc_out_port;
---                  end if;
---                end if;
---            end process;
-
-                  
-                    
-                  --count, non più inc_in/inc_in_port
-    --lettura da w, inc_in è ciò che effettivamente "contiene" il valore del contatore.
+      end process;              
+                              
+    --lettura da w, count è ciò che effettivamente "contiene" il valore del contatore.
+    --mux_ingressi
     process(i_clk)
         begin
             if (i_rst = '1') then
-                     --reg3_data <= "00";
-                     --reg1_data <= "0000000000000000";
+                     reg3_data <= "00";
+                     reg1_data <= "0000000000000000";
             elsif (i_clk'event and i_clk = '1') then
                 if(i_start = '1' and i_rst = '0') then   
                     case count is
@@ -147,8 +129,8 @@ begin
                         when "10001" => 
                             reg1_data(0) <= i_w;       
                                             
-                        when others => reg1_data <= "XXXXXXXXXXXXXXXX";            -- Non dimenticarsi il caso base, se non lo metto, lui intende che negli 
-                                                                                                    -- altri casi io voglia mantenere il valore precedente e genera quindi un latch. alternativamente metterlo prima del case
+                        when others => reg1_data <= "XXXXXXXXXXXXXXXX";            
+                                                                                                    
                     end case;
               end if;
           end if;
@@ -159,11 +141,11 @@ begin
       process(i_clk, i_start)  
         variable number_shift : std_logic_vector(0 to 4);
         begin
-           if (i_rst = '1') then               --per prima cosa vado a verificare se c'è stato un reset
+           if (i_rst = '1') then              
              number_shift := "00000";
-           elsif (i_clk'event and i_clk = '1') then      -- Non dimenticarsi il 'event, altrimenti vengono generati dei latch                                    
+           elsif (i_clk'event and i_clk = '1') then                                        
              if(i_start = '0' and i_rst = '0' and flag_shift = '1') then 
-                number_shift := STD_LOGIC_VECTOR ( UNSIGNED(count) - UNSIGNED(shift_counter) - UNSIGNED(shift_counter) - UNSIGNED(shift_counter)); --qui calcoliamo counter - 3
+                number_shift := STD_LOGIC_VECTOR ( UNSIGNED(count) - UNSIGNED(shift_counter) - UNSIGNED(shift_counter) - UNSIGNED(shift_counter)); 
                 o_mem_addr <= std_logic_vector( shift_right( unsigned(reg1_data), to_integer( 15 - UNSIGNED(number_shift) ) ) ); --qui shiftiamo e paddiamo
               end if;
            end if;
@@ -178,8 +160,8 @@ begin
     begin 
         if(i_rst = '1') then
             reg_mem_data <= "00000000";
-        elsif (i_clk'event and i_clk = '1') then          --se sale clock 
-            if(reg_mem_load = '1') then                 -- se reg mem load = 1
+        elsif (i_clk'event and i_clk = '1') then          
+            if(reg_mem_load = '1') then               
                 reg_mem_data <= i_mem_data;
             end if;
         end if;
@@ -195,14 +177,14 @@ begin
              regz2_data <= "00000000";
              regz3_data <= "00000000";
            elsif (i_clk'event and i_clk = '1') then
-                if(reg_out = '1') then      --regz0_data <= demux00_data;
+                if(reg_out = '1') then      
                    case reg3_data is
                      when "00" => regz0_data <= reg_mem_data;
                      when "01" => regz1_data <= reg_mem_data;  
                      when "10" => regz2_data <= reg_mem_data;
                      when "11" => regz3_data <= reg_mem_data;
                      
-                     when others => null; --per non eseguire nessuna azione
+                     when others => null; 
                    end case;             
             end if;
            end if; 
@@ -255,27 +237,27 @@ begin
                -- quando rst=0, si passa allo stato wait_start
                when RESET =>                    
                    if i_rst = '0' then
-                       next_state <= WAIT_START;    --s0
+                       next_state <= WAIT_START;    
                    end if;
                    
                -- quando start = 1 -> vai a w_read
                when WAIT_START =>
                    if i_start = '1' then
-                        next_state <= W_READ;       --s1
+                        next_state <= W_READ;       
                    elsif i_rst = '1' then
                         next_state <= RESET;
                    end if;
                
                 when W_READ =>
                    if i_start = '0' then
-                        next_state <= CREATE_ADDRESS;   --NUOVO STATO PER CREARE INDIRIZZO
+                        next_state <= CREATE_ADDRESS;   
                    elsif i_rst = '1' then
                         next_state <= RESET;
                    end if;
                
                when CREATE_ADDRESS =>
                    if i_start = '0' then
-                       next_state <= ASK_MEM;       --s2
+                       next_state <= ASK_MEM;      
                    elsif i_rst = '1' then
                        next_state <= RESET;
                    end if;
@@ -292,8 +274,7 @@ begin
                         next_state <= RESET;
                     else
                         next_state <= REG_MEM_WRITE;
-                        --count <= "00000";
-                        --NUM1 <= "00000";
+                        --count <= "00000";                    
                     end if;
                     
                when REG_MEM_WRITE =>
@@ -339,17 +320,15 @@ begin
                         next_state <= WAIT_START;
                     end if;
            end case;
-    end process;
-    
-    
+    end process;   
+              
     --CURRENT STATE PROCESS
-    process(cur_state) --quando arriva il reset, riparte tutto e vengono resettati i segnali 
+    process(cur_state) 
        begin
-            flag_shift <= '0'; --inizializziamo a 0 questa flag che viene settata ad 1 nel passaggio da s1 -> s2
+            flag_shift <= '0'; 
             reg_mem_load <= '0';
-            
-            --reg2_load <= '0';
-            reg3_load <= '0';
+                     
+            --reg3_load <= '0';
             reg_out <= '0';
             
             o_mem_en <= '0';
@@ -359,50 +338,43 @@ begin
             --done_ok <= '0';
             
             case cur_state is
-                when RESET =>           --SX
-                            flag_shift <= '0'; --inizializziamo a 0 questa flag che viene settata ad 1 nel passaggio da s1 -> s2
+                when RESET =>           
+                            flag_shift <= '0'; 
 
                             reg_mem_load <= '0';                     
                             
-                            --reg2_load <= '0';
-                            reg3_load <= '0';
+                           
+                            --reg3_load <= '0';
                             reg_out <= '0';
                             
                             --o_mem_addr <= "0000000000000000";
                    
                             o_mem_en <= '0';
                             o_mem_we <= '0';
-                            --o_z0 <= "00000000";
-                            --o_z1 <= "00000000";
-                            --o_z2 <= "00000000";
-                            --o_z3 <= "00000000";
-                            --count <= "00000";
-                            --done_ok <= '0';             --POSSIBILE LATCH
                             
-                when WAIT_START =>      --S0
-                when W_READ =>          --S1
-                    --reg2_load <= '1';
-                    reg3_load <= '1';
+                            --count <= "00000";
+                            --done_ok <= '0';             
+                            
+                when WAIT_START =>      
+                when W_READ =>                         
+                    --reg3_load <= '1';
                 when CREATE_ADDRESS =>
-                    flag_shift <= '1';  --mettiamo ad 1 la flag per lo shift
-                when ASK_MEM =>         --S2
+                    flag_shift <= '1'; 
+                when ASK_MEM =>         
                     o_mem_en <= '1';
-                    flag_shift <= '0';  --riportiamo a 0 la flag per calcolare il valore dello shift
-                    --reg2_load <= '0';
-                    reg3_load <= '0';
-                when READ_MEM =>            --S3
-                    reg_mem_load <= '1';
-                    --count <= "00000";
+                    flag_shift <= '0';                     
+                    --reg3_load <= '0';
+                when READ_MEM =>            
+                    reg_mem_load <= '1';                  
                 when REG_MEM_WRITE =>
                     reg_mem_load <= '0';
                     o_mem_en <= '0';
                 when REG_OUT_WRITE =>
                     reg_out <= '1';
-                when OUT_WRITE =>               --S4
+                when OUT_WRITE =>               
                     done_ok <= '1';
                 when OUT_SEND =>
-                    reg_out <= '0';
-                    --done_ok <= '1';
+                    reg_out <= '0';                    
                 when OUT_DONE =>
                     o_done <= '1';
                     done_ok <= '0';
@@ -413,5 +385,5 @@ begin
            end case;
         end process;
        
-   
+     
 end project_reti_logiche_arch;
