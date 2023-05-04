@@ -3,6 +3,6 @@ INFO: [VRFC 10-311] analyzing module project_reti_logiche
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity project_tb
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_4.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity project_tb
-WARNING: [VRFC 10-1194] overwriting existing secondary unit projecttb [C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd:12]
+WARNING: [VRFC 10-1194] overwriting existing secondary unit projecttb [C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_4.vhd:12]

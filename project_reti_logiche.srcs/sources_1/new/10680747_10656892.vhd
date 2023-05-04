@@ -27,12 +27,12 @@ end project_reti_logiche;
 --ARCHITETTURA
 architecture project_reti_logiche_arch of project_reti_logiche is
     
-    -- Sx       RESET
-    -- S0       WAIT_START
-    -- S1       W_READ
-    -- S2       CREATE_ADDRESS
-    -- S3       ASK_MEM
-    -- S4       READ_MEM
+    -- Sx       RESET               --> viene resettata la macchina
+    -- S0       WAIT_START          --> attendiamo il segnale di start
+    -- S1       W_READ              --> leggiamo i valori in ingresso su w
+    -- S2       CREATE_ADDRESS      --> costruiamo l'indirizzo di memoria correttamente paddato
+    -- S3       ASK_MEM             --> forniamo l'indirizzo di memoria costruito alla memoria stessa
+    -- S4       READ_MEM            --> leggiamo il dato proveniente dalla memoria
     -- S5       REG_MEM_WRITE       --> scriviamo sul registro reg mem
     -- S6       REG_OUT_WRITE       --> in base all'uscita scelta, scrivo nel suo registro
     -- S7       OUT_WRITE           --> mando in uscita 
@@ -42,7 +42,6 @@ architecture project_reti_logiche_arch of project_reti_logiche is
     
     type S is (RESET, WAIT_START, W_READ, CREATE_ADDRESS, ASK_MEM, READ_MEM, REG_MEM_WRITE, REG_OUT_WRITE, OUT_WRITE, OUT_SEND, OUT_DONE, OUT_OK);
     
-    --signal reg3_load    : std_logic;  in realtà è start che abilita la scrittura nei registri: questo segnale non serve
     
     signal cur_state    : S;
     signal next_state   : S;
@@ -81,7 +80,7 @@ begin
                               
     --lettura da w, count è ciò che effettivamente "contiene" il valore del contatore.
     --mux_ingressi
-    process(i_clk)
+    process(i_clk, i_rst)
         begin
             if (i_rst = '1') then
                      reg3_data <= "00";
@@ -89,15 +88,15 @@ begin
             elsif (i_clk'event and i_clk = '1') then
                 if(i_start = '1' and i_rst = '0') then   
                     case count is
-                        --reg3 valore uscita
+                        --reg3: valore del canale di uscita
                         when "00000" => 
                             reg3_data(1) <= i_w;
                         when "00001" => 
                             reg3_data(0) <= i_w;
                         
-                        --reg1 valore indirizzo                  
+                        --reg1 valore indirizzo di memoria      
                         when "00010" => 
-                            reg1_data(15) <= i_w;     --salviamo in reg1 l'indirizzo di memoria non ancora paddato dalla cima, in ordine
+                            reg1_data(15) <= i_w;    
                         when "00011" => 
                             reg1_data(14) <= i_w;       
                         when "00100" => 
@@ -137,8 +136,8 @@ begin
      end process;
       
       
-       --questo è il processo con cui calciamo l'indirizzo di memoria con shift ecc.
-      process(i_clk, i_start)  
+      --questo è il processo con cui calcoliamo l'indirizzo di memoria paddato.
+      process(i_clk, i_start, i_rst)  
         variable number_shift : std_logic_vector(0 to 4);
         begin
            if (i_rst = '1') then              
@@ -192,7 +191,7 @@ begin
         
         
     --OUT SENDER PROCESS
-    --in questo processo mostriamo i valori sulle uscite vere (o_z1 ecc) quando done_ok = 1. 
+    --in questo processo mostriamo i valori sui reali canali di sucita (o_z1 ecc) quando done_ok = 1. 
     process(i_clk, i_rst, done_ok)
     begin
      if(i_rst = '1') then
@@ -233,14 +232,12 @@ begin
     begin
            next_state <= cur_state;
            case cur_state is
-               
-               -- quando rst=0, si passa allo stato wait_start
+                              
                when RESET =>                    
                    if i_rst = '0' then
                        next_state <= WAIT_START;    
                    end if;
-                   
-               -- quando start = 1 -> vai a w_read
+                                
                when WAIT_START =>
                    if i_start = '1' then
                         next_state <= W_READ;       
@@ -273,8 +270,7 @@ begin
                     if i_rst = '1' then
                         next_state <= RESET;
                     else
-                        next_state <= REG_MEM_WRITE;
-                        --count <= "00000";                    
+                        next_state <= REG_MEM_WRITE;                
                     end if;
                     
                when REG_MEM_WRITE =>
@@ -326,44 +322,34 @@ begin
     process(cur_state) 
        begin
             flag_shift <= '0'; 
-            reg_mem_load <= '0';
-                     
-            --reg3_load <= '0';
-            reg_out <= '0';
-            
+            reg_mem_load <= '0';                          
+            reg_out <= '0';            
             o_mem_en <= '0';
             o_mem_we <= '0';
             o_done <= '0';
-
-            --done_ok <= '0';
             
             case cur_state is
                 when RESET =>           
                             flag_shift <= '0'; 
 
                             reg_mem_load <= '0';                     
-                            
-                           
-                            --reg3_load <= '0';
+                                                                                  
                             reg_out <= '0';
                             
                             --o_mem_addr <= "0000000000000000";
                    
                             o_mem_en <= '0';
                             o_mem_we <= '0';
-                            
-                            --count <= "00000";
+                                                     
                             --done_ok <= '0';             
                             
                 when WAIT_START =>      
-                when W_READ =>                         
-                    --reg3_load <= '1';
+                when W_READ =>                                             
                 when CREATE_ADDRESS =>
                     flag_shift <= '1'; 
                 when ASK_MEM =>         
                     o_mem_en <= '1';
-                    flag_shift <= '0';                     
-                    --reg3_load <= '0';
+                    flag_shift <= '0';                                        
                 when READ_MEM =>            
                     reg_mem_load <= '1';                  
                 when REG_MEM_WRITE =>

@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue May 02 09:43:28 2023
+# Process ID: 7384
+# Current directory: C:/Users/aless/Documents/GitHub/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14116 C:\Users\aless\Documents\GitHub\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Users/aless/Documents/GitHub/project_reti_logiche/vivado.log
+# Journal file: C:/Users/aless/Documents/GitHub/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aless/Documents/GitHub/project_reti_logiche/project_reti_logiche.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_6.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_4.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_1.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_2.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_3.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_4.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_5.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+restart
+run all
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_6.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_file C:/Users/aless/Documents/GitHub/project_reti_logiche/tbset_new/tb_7.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source project_tb.tcl
+restart
+run all
+close_sim
