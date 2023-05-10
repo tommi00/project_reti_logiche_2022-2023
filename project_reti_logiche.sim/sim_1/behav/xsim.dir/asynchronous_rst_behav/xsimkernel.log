@@ -1,4 +1,0 @@
-Running: xsim.dir/asynchronous_rst_behav/xsimk.exe -simmode gui -wdb asynchronous_rst_behav.wdb -simrunnum 0 -socket 63261
-Design successfully loaded
-Design Loading Memory Usage: 23100 KB (Peak: 23100 KB)
-Design Loading CPU Usage: 203 ms
