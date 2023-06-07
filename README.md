@@ -2,7 +2,7 @@
 
 Final project of **Reti Logiche** course held
 at Politecnico di Milano. (2022/2023) 
-Exam passed with 30.
+#Exam passed with 30.
 
 **Teacher**: Fabio Salice
 
